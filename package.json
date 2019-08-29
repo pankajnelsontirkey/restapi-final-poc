@@ -1,0 +1,35 @@
+{
+  "name": "restapi-final-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "@types/express": "^4.17.1",
+    "@types/mongoose": "^5.5.15",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.11"
+  },
+  "devDependencies": {
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "ts-node ./src/server.ts",
+    "start": "nodemon ./dist/server.js",
+    "prod": "npm run build && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pankajnelsontirkey/restapi-final-poc.git"
+  },
+  "author": "Pankaj Nelson Tirkey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pankajnelsontirkey/restapi-final-poc/issues"
+  },
+  "homepage": "https://github.com/pankajnelsontirkey/restapi-final-poc#readme"
+}
