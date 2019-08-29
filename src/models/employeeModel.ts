@@ -18,7 +18,7 @@ export const EmployeeSchema = new Schema({
     required: true
   },
   createdAt: {
-    type: Number,
-    required: true
+    type: Date,
+    default: Date.now
   }
 });

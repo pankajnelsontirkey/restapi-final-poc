@@ -17,4 +17,46 @@ export class EmployeeController {
       res.json(employee);
     });
   }
+
+  /* GET all employees */
+  public getEmployees(req: Request, res: Response) {
+    Employee.find({}, (err, employees) => {
+      if (err) {
+        res.send(err);
+      }
+      res.json(employees);
+    });
+  }
+
+  public getEmployeeById(req: Request, res: Response) {
+    Employee.findById(req.params['id'], (err, employee) => {
+      if (err) {
+        res.send(err);
+      }
+      res.json(employee);
+    });
+  }
+
+  public updateEmployee(req: Request, res: Response) {
+    Employee.findOneAndUpdate(
+      { _id: req.params['id'] },
+      req.body,
+      { new: true },
+      (err, updatedEmployee) => {
+        if (err) {
+          res.send(err);
+        }
+        res.json(updatedEmployee);
+      }
+    );
+  }
+
+  public deleteEmployee(req: Request, res: Response) {
+    Employee.remove({ _id: req.params['id'] }, err => {
+      if (err) {
+        res.send(err);
+      }
+      res.json({ message: 'Successfully deleted contact.' });
+    });
+  }
 }
