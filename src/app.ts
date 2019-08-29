@@ -1,7 +1,7 @@
 import * as express from 'express';
 import * as bodyParser from 'body-parser';
-import { UserRoutes } from './routes/userRoutes';
-import { AdminRoutes } from 'routes/adminRoutes';
+import { UserRoutes } from './routes/employeeRoutes';
+import { AdminRoutes } from 'routes/userRoutes';
 
 class App {
   public app: express.Application;
