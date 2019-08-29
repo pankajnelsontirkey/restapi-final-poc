@@ -1,35 +1,30 @@
 import { Request, Response } from 'express';
 
-export class UserRoutes {
+export class AdminRoutes {
   public routes(app): void {
-    /*  */
-    app.route('/').get((req: Request, res: Response) => {
-      res.status(200).send({ message: 'hello' });
+    /* GET /users */
+    app.route('/users').get((req: Request, res: Response) => {
+      res.status(200).send({ message: 'GET request to /users' });
     });
 
-    /* GET /employees */
-    app.route('/employees').get((req: Request, res: Response) => {
-      res.status(200).send({ message: 'GET request to /employees' });
+    /* POST /users */
+    app.route('/users').post((req: Request, res: Response) => {
+      res.status(200).send({ message: 'POST request to /users' });
     });
 
-    /* POST /employees */
-    app.route('/employees').post((req: Request, res: Response) => {
-      res.status(200).send({ message: 'POST request to /employees' });
+    /* PUT /users/:id */
+    app.route('/users').put((req: Request, res: Response) => {
+      res.status(200).send({ message: 'PUT request to /users' });
     });
 
-    /* PUT /employees/:id */
-    app.route('/employees/:id').put((req: Request, res: Response) => {
-      res.status(200).send({ message: 'PUT request to /employees' });
+    /* PATCH /users/:id */
+    app.route('/users').patch((req: Request, res: Response) => {
+      res.status(200).send({ message: 'PATCH request to /users' });
     });
 
-    /* PATCH /employees/:id */
-    app.route('/employees/:id').put((req: Request, res: Response) => {
-      res.status(200).send({ message: 'PUT request to /employees' });
-    });
-
-    /* DELETE /employees/:id */
-    app.route('/employees/:id').delete((req: Request, res: Response) => {
-      res.status(200).send({ message: 'DELETE request to /employees/:id' });
+    /* DELETE /users/:id */
+    app.route('/users').delete((req: Request, res: Response) => {
+      res.status(200).send({ message: 'DELETE request to /users' });
     });
   }
 }
