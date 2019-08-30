@@ -1,7 +1,8 @@
 # restapi-final-poc
 Rest API built on node, express, mongodb written in typescript
 
-# run "npm install" to install dependencies
-# add .env file and add variables 'PORT' with your port & "DBA_DB_URI" with uri to your mongo server (local/cloud)
+run "npm install" to install dependencies
 
-"npm run dev" to start server
+add .env file and add variables 'PORT' with your port & "DBA_DB_URI" with uri to your mongo server (local/cloud)
+
+run "npm run dev" to start server
