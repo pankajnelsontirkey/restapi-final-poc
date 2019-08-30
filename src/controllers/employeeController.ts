@@ -9,7 +9,6 @@ export class EmployeeController {
   /* Add employee method */
   public addNewEmployee(req: Request, res: Response) {
     let newEmployee = new Employee(req.body);
-
     newEmployee.save((err, employee) => {
       if (err) {
         res.send(err);
@@ -18,7 +17,7 @@ export class EmployeeController {
     });
   }
 
-  /* GET all employees */
+  /* Fetch all employees */
   public getEmployees(req: Request, res: Response) {
     Employee.find({}, (err, employees) => {
       if (err) {
@@ -28,15 +27,17 @@ export class EmployeeController {
     });
   }
 
+  /* Fetch employee by id */
   public getEmployeeById(req: Request, res: Response) {
-    Employee.findById(req.params['id'], (err, employee) => {
+    Employee.findById(req.params['id'], (err, employeeById) => {
       if (err) {
         res.send(err);
       }
-      res.json(employee);
+      res.json(employeeById);
     });
   }
 
+  /* Update employee */
   public updateEmployee(req: Request, res: Response) {
     Employee.findOneAndUpdate(
       { _id: req.params['id'] },
@@ -51,12 +52,16 @@ export class EmployeeController {
     );
   }
 
+  /** Delete employee
+   * NOT MENTIONED IN REQUIREMENTS!
+   */
+
   public deleteEmployee(req: Request, res: Response) {
-    Employee.remove({ _id: req.params['id'] }, err => {
+    Employee.findOneAndDelete({ _id: req.params['id'] }, err => {
       if (err) {
         res.send(err);
       }
-      res.json({ message: 'Successfully deleted contact.' });
+      res.json({ message: 'Successfully deleted employee!' });
     });
   }
 }

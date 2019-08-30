@@ -1,27 +1,30 @@
 import * as express from 'express';
 import * as bodyParser from 'body-parser';
 import * as mongoose from 'mongoose';
+import * as cors from 'cors';
 
-import { UserRoutes } from './routes/employeeRoutes';
-import { AdminRoutes } from 'routes/userRoutes';
+import { EmployeeRoutes } from './routes/employee.routes';
+import { UserRoutes } from './routes/user.routes';
 
-class App {
+export class App {
   public app: express.Application;
+  public dba_db_uri: string = process.env.DBA_DB_URI;
+
+  public employeeRoutes: EmployeeRoutes = new EmployeeRoutes();
   public userRoutes: UserRoutes = new UserRoutes();
-  // public adminRoutes: AdminRoutes = new AdminRoutes();
-  // public usersMongoUrl: string = process.env.ADMIN_MONGO_URI;
-  // public adminMongoUrl: string = process.env.USER_MONGO_URI;
-  public dbaMongoUrl: string = process.env.DBA_MONGO_URI;
 
   constructor() {
     this.app = express();
     this.config();
+    this.employeeRoutes.routes(this.app);
     this.userRoutes.routes(this.app);
-    // this.adminRoutes.routes(this.app);
     this.dbSetup();
   }
 
   private config(): void {
+    /* Use CORS */
+    this.app.use(cors());
+
     /* Use bodyParser */
     this.app.use(bodyParser.json());
     this.app.use(bodyParser.urlencoded({ extended: false }));
@@ -29,8 +32,7 @@ class App {
 
   private dbSetup(): void {
     (<any>mongoose).Promise = global.Promise;
-    mongoose.connect(this.dbaMongoUrl);
+
+    mongoose.connect(this.dba_db_uri, { useNewUrlParser: true });
   }
 }
-
-export default new App().app;
