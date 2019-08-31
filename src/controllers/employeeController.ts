@@ -55,13 +55,12 @@ export class EmployeeController {
   /** Delete employee
    * NOT MENTIONED IN REQUIREMENTS!
    */
-
-  public deleteEmployee(req: Request, res: Response) {
+  /* public deleteEmployee(req: Request, res: Response) {
     Employee.findOneAndDelete({ _id: req.params['id'] }, err => {
       if (err) {
         res.send(err);
       }
       res.json({ message: 'Successfully deleted employee!' });
     });
-  }
+  } */
 }
