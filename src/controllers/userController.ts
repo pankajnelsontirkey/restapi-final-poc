@@ -2,6 +2,9 @@ import { model } from 'mongoose';
 import { Request, Response } from 'express';
 
 import { UserSchema } from '../models/userModel';
+var jwt = require('jsonwebtoken');
+
+const secret = 'jhasgdhjagsdhagsdhags';
 
 const User = model('users', UserSchema);
 
@@ -29,13 +32,33 @@ export class UserController {
 
   /* Fetch user by id */
   public getUserById(req: Request, res: Response) {
-    User.findById(req.params['id'], (err, userById) => {
+    console.log('LoggedInUser ', req.headers['loggedInUser']);
+    User.findById(req.headers['loggedInUser'], (err, userById) => {
       if (err) {
         res.send(err);
       }
       res.json(userById);
     });
   }
+
+  /** TODO!!!
+   *  Fetch user by id */
+  /* public async login(req: Request, res: Response) {
+    try {
+      let user = await User.findOne(req.body);
+      if (!user) {
+        console.log('User not found');
+
+        res.status(400).send({ message: 'User not found' });
+      }
+      let token = jwt.sign({ _id: user._id }, secret);
+      res.send({ token });
+    } catch (e) {
+      console.log(e);
+
+      res.status(400).send(e);
+    }
+  } */
 
   /** Update user
    * NOT MENTIONED IN REQUIREMENTS!

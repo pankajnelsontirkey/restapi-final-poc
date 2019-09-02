@@ -1,4 +1,5 @@
 import { UserController } from '../controllers/userController';
+import { Verifier } from '../middleware/loginMiddleware';
 
 export class UserRoutes {
   public userController: UserController = new UserController();
@@ -11,7 +12,12 @@ export class UserRoutes {
     app.route('/users').post(this.userController.addNewUser);
 
     /* Get user by id */
-    app.route('/users/:id').get(this.userController.getUserById);
+    app
+      .route('/users/:id')
+      .get([new Verifier().verify], this.userController.getUserById);
+
+    /** TODO!!!
+     *  app.route('/login').post(this.userController.login); */
 
     /** Update user
      * NOT MENTIONED IN REQUIREMENTS!

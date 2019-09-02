@@ -5,8 +5,8 @@ config();
 
 const PORT = +process.env.PORT;
 
-const AppInstance = new App();
+const APPINSTANCE = new App();
 
-AppInstance.app.listen(PORT, () => {
+APPINSTANCE.app.listen(PORT, () => {
   console.log(`Server is listening on port: ${PORT}`);
 });
