@@ -1,5 +1,9 @@
-var jwt = require('jsonwebtoken');
-var key = 'jhasgdhjagsdhagsdhags';
+import * as jwt from 'jsonwebtoken';
+
+// var jwt = require('jsonwebtoken');
+// var key = 'jhasgdhjagsdhagsdhags';
+
+const SECRET = process.env.SECRET;
 
 export class Verifier {
   verify = (req: any, res: any, next: any) => {
@@ -12,7 +16,7 @@ export class Verifier {
     }
 
     try {
-      let decoded = jwt.verify(token, key);
+      let decoded = jwt.verify(token, SECRET);
       console.log(decoded);
       req.headers['loggedInUser'] = decoded._id;
       next();

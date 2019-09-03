@@ -5,11 +5,11 @@ export class UserRoutes {
   public userController: UserController = new UserController();
 
   public routes(app): void {
-    /* Get all users */
-    app.route('/users').get(this.userController.getUsers);
-
     /* Add new user */
     app.route('/users').post(this.userController.addNewUser);
+
+    /* Get all users */
+    app.route('/users').get(this.userController.getUsers);
 
     /* Get user by id */
     app

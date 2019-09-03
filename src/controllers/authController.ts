@@ -5,12 +5,26 @@ import { UserSchema } from '../models/userModel';
 import { model } from 'mongoose';
 
 const SECRET = process.env.SECRET;
-const User = model('users', UserSchema);
+const USER = model('users', UserSchema);
 
 export class AuthController {
+  public async signup(req: Request, res: Response) {
+    let newUser = new USER(req.body);
+    try {
+      let user = await newUser.save();
+      if (!user) {
+        res.send({ message: 'Could not sign up the user' });
+      }
+      res.status(200).send(user);
+    } catch (e) {
+      console.log('Error: ', e);
+      res.send(e);
+    }
+  }
+
   public async login(req: Request, res: Response) {
     try {
-      let user = await User.findById(req.body);
+      let user = await USER.findById(req.body);
       if (!user) {
         console.log('User not found!');
 

@@ -3,12 +3,12 @@ import { Request, Response } from 'express';
 
 import { EmployeeSchema } from '../models/employeeModel';
 
-const Employee = model('employees', EmployeeSchema);
+const EMPLOYEE = model('employees', EmployeeSchema);
 
 export class EmployeeController {
   /* Add employee method */
   public addNewEmployee(req: Request, res: Response) {
-    let newEmployee = new Employee(req.body);
+    let newEmployee = new EMPLOYEE(req.body);
     newEmployee.save((err, employee) => {
       if (err) {
         res.send(err);
@@ -19,7 +19,7 @@ export class EmployeeController {
 
   /* Fetch all employees */
   public getEmployees(req: Request, res: Response) {
-    Employee.find({}, (err, employees) => {
+    EMPLOYEE.find({}, (err, employees) => {
       if (err) {
         res.send(err);
       }
@@ -29,7 +29,7 @@ export class EmployeeController {
 
   /* Fetch employee by id */
   public getEmployeeById(req: Request, res: Response) {
-    Employee.findById(req.params['id'], (err, employeeById) => {
+    EMPLOYEE.findById(req.params['id'], (err, employeeById) => {
       if (err) {
         res.send(err);
       }
@@ -39,7 +39,7 @@ export class EmployeeController {
 
   /* Update employee */
   public updateEmployee(req: Request, res: Response) {
-    Employee.findOneAndUpdate(
+    EMPLOYEE.findOneAndUpdate(
       { _id: req.params['id'] },
       req.body,
       { new: true },
@@ -56,7 +56,7 @@ export class EmployeeController {
    * NOT MENTIONED IN REQUIREMENTS!
    */
   /* public deleteEmployee(req: Request, res: Response) {
-    Employee.findOneAndDelete({ _id: req.params['id'] }, err => {
+    EMPLOYEE.findOneAndDelete({ _id: req.params['id'] }, err => {
       if (err) {
         res.send(err);
       }

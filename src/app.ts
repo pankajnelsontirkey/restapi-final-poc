@@ -5,19 +5,22 @@ import * as cors from 'cors';
 
 import { EmployeeRoutes } from './routes/employee.routes';
 import { UserRoutes } from './routes/user.routes';
+import { AuthRoutes } from './routes/auth.routes';
 
 export class App {
   public app: express.Application;
-  public dba_db_uri: string = process.env.DBA_DB_URI;
+  private dba_db_uri: string = process.env.DBA_DB_URI;
 
-  public employeeRoutes: EmployeeRoutes = new EmployeeRoutes();
+  public authRoutes: AuthRoutes = new AuthRoutes();
   public userRoutes: UserRoutes = new UserRoutes();
+  public employeeRoutes: EmployeeRoutes = new EmployeeRoutes();
 
   constructor() {
     this.app = express();
     this.config();
-    this.employeeRoutes.routes(this.app);
+    this.authRoutes.routes(this.app);
     this.userRoutes.routes(this.app);
+    this.employeeRoutes.routes(this.app);
     this.dbSetup();
   }
 
