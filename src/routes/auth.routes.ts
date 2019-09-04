@@ -6,5 +6,8 @@ export class AuthRoutes {
   public routes(app): void {
     /* Login */
     app.route('/login').post(this.authController.login);
+
+    /* Signup */
+    app.route('signup').post(this.authController.signup);
   }
 }

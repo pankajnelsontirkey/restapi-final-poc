@@ -13,6 +13,7 @@ export const UserSchema = new Schema({
     type: String,
     required: true
   },
+  /* Store hashed passwords only */
   password: {
     type: String,
     required: true

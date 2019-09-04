@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
 import { sign } from 'jsonwebtoken';
+import { model } from 'mongoose';
 
 import { UserSchema } from '../models/userModel';
-import { model } from 'mongoose';
 
 const SECRET = process.env.SECRET;
 const USER = model('users', UserSchema);
