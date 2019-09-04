@@ -9,7 +9,7 @@ import { AuthRoutes } from './routes/auth.routes';
 
 export class App {
   public app: express.Application;
-  private dba_db_uri: string = process.env.DBA_DB_URI;
+  private db_uri: string = process.env.DB_URI;
 
   public authRoutes: AuthRoutes = new AuthRoutes();
   public userRoutes: UserRoutes = new UserRoutes();
@@ -36,6 +36,6 @@ export class App {
   private dbSetup(): void {
     (<any>mongoose).Promise = global.Promise;
 
-    mongoose.connect(this.dba_db_uri, { useNewUrlParser: true });
+    mongoose.connect(this.db_uri, { useNewUrlParser: true });
   }
 }

@@ -1,4 +1,5 @@
 import { Schema } from 'mongoose';
+import { hash as BcryptHash, compare as BcryptCompare } from 'bcrypt';
 
 export const UserSchema = new Schema({
   firstName: {
@@ -23,3 +24,17 @@ export const UserSchema = new Schema({
     required: true
   }
 });
+
+UserSchema.pre('save', async function(next) {
+  const user = this;
+
+  const hashedPassword = await BcryptHash(user['password'], 10);
+  this['password'] = hashedPassword;
+  next();
+});
+
+UserSchema.methods['verifyPassword'] = async function(password) {
+  const user = this;
+  const result = await BcryptCompare(password, user.password);
+  return result;
+};

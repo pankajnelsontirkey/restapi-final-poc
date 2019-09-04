@@ -14,7 +14,7 @@ export class UserRoutes {
     /* Get user by id */
     app
       .route('/users/:id')
-      .get([new Verifier().verify], this.userController.getUserById);
+      .get(/* [new Verifier().verify], */ this.userController.getUserById);
 
     /** TODO!!!
      *  app.route('/login').post(this.userController.login); */
