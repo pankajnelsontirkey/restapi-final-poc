@@ -1,0 +1,368 @@
+repo_name: pankajnelsontirkey/restapi-final-poc
+report_id: d03b42f55fff2ef1f1c886e30ea5fc21
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-23T21:54:36+00:00'
+requested_by: pankajnelsontirkey
+provider: github
+branch: master
+detected_tools_count: 24
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-08-31 04:56:51.000000000 Z
+- name: TypeScript
+  description: A superset of JavaScript that compiles to clean JavaScript output
+  website_url: http://www.typescriptlang.org
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc
+  detection_source: Repo Metadata
+- name: ExpressJS
+  description: Sinatra inspired web development framework for node.js -- insanely
+    fast, flexible, and simple
+  website_url: http://expressjs.com/
+  version: 4.17.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Microframeworks (Backend)
+  image_url: https://img.stackshare.io/service/1163/hashtag.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-08-31 04:56:51.000000000 Z
+- name: Node.js
+  description: A platform built on Chrome's JavaScript runtime for easily building
+    fast, scalable network applications
+  website_url: http://nodejs.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-08-29 13:14:22.000000000 Z
+- name: Mongoose
+  description: MongoDB object modeling designed to work in an asynchronous environment
+  website_url: http://mongoosejs.com/
+  version: 5.7.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Object Document Mapper (ODM)
+  image_url: https://img.stackshare.io/service/1231/0TXzZU7W_400x400.jpg
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2019-11-05 23:18:48.000000000 Z
+- name: Dotenv
+  description: Loads environment variables from .env for Nodejs projects
+  website_url: https://github.com/motdotla/dotenv
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Server Configuration and Automation
+  image_url: https://img.stackshare.io/service/8067/default_90dcb1286af7685c68df319c764b80704df1155b.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-08-31 04:56:51.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc
+  detection_source: Repo Metadata
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-08-29 13:14:22.000000000 Z
+- name: Passport
+  description: Simple, unobtrusive authentication for Node.js
+  website_url: http://passportjs.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: User Management and Authentication
+  image_url: https://ucarecdn.com/8f3cac0e-b146-4f0f-878c-680a6671d804/
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-09-04 13:24:29.000000000 Z
+- name: "@types/cors"
+  description: TypeScript definitions for cors
+  package_url: https://www.npmjs.com/@types/cors
+  version: 2.8.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17290/default_b2015e9577d171c4c3f12c3c8d253c01fe63ba8d.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-09-04 13:24:29.000000000 Z
+- name: "@types/dotenv"
+  description: Stub TypeScript definitions entry for dotenv
+  package_url: https://www.npmjs.com/@types/dotenv
+  version: 6.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16809/default_9a5182350af29cb82b3344853e865051f508ac6c.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-09-04 13:24:29.000000000 Z
+- name: "@types/express"
+  description: TypeScript definitions for Express
+  package_url: https://www.npmjs.com/@types/express
+  version: 4.17.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16100/default_d947c1690e032a288145c7e2491999eab3ea8ede.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-09-04 13:24:29.000000000 Z
+- name: "@types/jsonwebtoken"
+  description: TypeScript definitions for jsonwebtoken
+  package_url: https://www.npmjs.com/@types/jsonwebtoken
+  version: 8.3.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16959/default_caea01ce44a5fd1bb200d8fc0f8f2a1695b4e569.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-09-04 13:24:29.000000000 Z
+- name: "@types/mongoose"
+  description: TypeScript definitions for Mongoose
+  package_url: https://www.npmjs.com/@types/mongoose
+  version: 5.5.15
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16898/default_884deeafc4d4b680b6d9cb7e3759ba2db025e8e7.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2019-11-05 23:18:48.000000000 Z
+- name: "@types/node"
+  description: TypeScript definitions for Node.js
+  package_url: https://www.npmjs.com/@types/node
+  version: 12.7.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15809/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-09-04 13:24:29.000000000 Z
+- name: "@types/passport"
+  description: TypeScript definitions for Passport
+  package_url: https://www.npmjs.com/@types/passport
+  version: 1.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18669/default_3ed0a361a097c631ee66d5aace42497748694521.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-09-04 13:24:29.000000000 Z
+- name: bcrypt
+  description: A bcrypt library for NodeJS
+  package_url: https://www.npmjs.com/bcrypt
+  version: 5.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16526/default_0a704f5fac0bffcf529c9a61658d0b9ddbf7504e.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2020-08-20 16:32:27.000000000 Z
+- name: body-parser
+  description: Node.js body parsing middleware
+  package_url: https://www.npmjs.com/body-parser
+  version: 1.19.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15906/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-08-31 04:56:51.000000000 Z
+- name: cors
+  description: Node.js CORS middleware
+  package_url: https://www.npmjs.com/cors
+  version: 2.8.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16165/default_41f04716a804e853d5c38a5b81ee0ea8a842ad82.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-08-31 04:56:51.000000000 Z
+- name: express
+  description: Fast, unopinionated, minimalist web framework
+  package_url: https://www.npmjs.com/express
+  version: 4.17.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15818/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-08-31 04:56:51.000000000 Z
+  vulnerabilities:
+  - name: qs vulnerable to Prototype Pollution
+    cve_id: CVE-2022-24999
+    cve_url: https://github.com/advisories/GHSA-hrpp-h998-j3pp
+    detected_date: Dec 7
+    severity: high
+    first_patched: 4.17.3
+- name: jsonwebtoken
+  description: JSON Web Token implementation
+  package_url: https://www.npmjs.com/jsonwebtoken
+  version: 8.5.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16155/default_77b54a203c743d16eddb6b6390cba17218454fa0.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-09-04 04:56:42.000000000 Z
+  vulnerabilities:
+  - name: jsonwebtoken has insecure input validation in jwt.verify function
+    cve_id: CVE-2022-23529
+    cve_url: https://github.com/advisories/GHSA-27h2-hvpr-p74q
+    detected_date: Dec 22
+    severity: high
+    first_patched: 9.0.0
+  - name: 'jsonwebtoken unrestricted key type could lead to legacy keys usage '
+    cve_id: CVE-2022-23539
+    cve_url: https://github.com/advisories/GHSA-8cf7-32gw-wr33
+    detected_date: Dec 22
+    severity: moderate
+    first_patched: 9.0.0
+  - name: jsonwebtoken vulnerable to signature validation bypass due to insecure default
+      algorithm in jwt.verify()
+    cve_id: CVE-2022-23540
+    cve_url: https://github.com/advisories/GHSA-qwph-4952-7xr6
+    detected_date: Dec 22
+    severity: moderate
+    first_patched: 9.0.0
+  - name: jsonwebtoken's insecure implementation of key retrieval function could lead
+      to Forgeable Public/Private Tokens from RSA to HMAC
+    cve_id: CVE-2022-23541
+    cve_url: https://github.com/advisories/GHSA-hjrf-2m68-5959
+    detected_date: Dec 22
+    severity: moderate
+    first_patched: 9.0.0
+- name: passport-jwt
+  description: Passport authentication strategy using JSON Web Tokens
+  package_url: https://www.npmjs.com/passport-jwt
+  version: 4.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18238/default_d0bdfc944c04fa7e84198f9a2784cc716a3d91a3.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-09-04 13:24:29.000000000 Z
+- name: passport-local
+  description: Local username and password authentication strategy for Passport
+  package_url: https://www.npmjs.com/passport-local
+  version: 1.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16747/default_adce7cef6d131ffc31466624541462e4db9534d4.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-09-04 13:24:29.000000000 Z
+- name: ts-node
+  description: TypeScript execution environment and REPL for node.js
+  package_url: https://www.npmjs.com/ts-node
+  version: 8.3.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15830/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+  detection_source_url: https://github.com/pankajnelsontirkey/restapi-final-poc/blob/master/package-lock.json
+  detection_source: package.json
+  last_updated_by: Pankaj Nelson Tirkey
+  last_updated_on: 2019-09-04 13:24:29.000000000 Z
