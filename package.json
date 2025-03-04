@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/pankajnelsontirkey/restapi-final-poc#readme",
   "dependencies": {
-    "bcrypt": "^5.0.0",
+    "bcrypt": "^5.1.1",
     "body-parser": "^1.20.1",
     "cors": "^2.8.5",
     "dotenv": "^8.1.0",
