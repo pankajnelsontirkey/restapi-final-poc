@@ -5,4 +5,4 @@ run "npm install" to install dependencies
 
 add .env file and add variables 'PORT' with your port & "DBA_DB_URI" with uri to your mongo server (local/cloud)
 
-run "npm run dev" to start server
+run "npm start" to start server
