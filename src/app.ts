@@ -36,6 +36,6 @@ export class App {
   private dbSetup(): void {
     (<any>mongoose).Promise = global.Promise;
 
-    mongoose.connect(this.db_uri, { useNewUrlParser: true });
+    mongoose.connect(this.db_uri);
   }
 }
